@@ -18,9 +18,20 @@ class SmartCalculator:
         pass
 
     def run(self):
-        operator_1, operator_2 = [int(op) for op in input().split()]
-        self.result = self.addition(operator_1, operator_2)
-        print(self.result)
+        while True:
+            user_input = input().split()
+            if not len(user_input):
+                continue
+            elif len(user_input) == 1:
+                if user_input[0] == "/exit":
+                    print("Bye!")
+                    break
+                else:
+                    print(*user_input)
+            else:
+                operator_1, operator_2 = [int(op) for op in user_input]
+                self.result = self.addition(operator_1, operator_2)
+                print(self.result)
 
 
 calculator = SmartCalculator()
