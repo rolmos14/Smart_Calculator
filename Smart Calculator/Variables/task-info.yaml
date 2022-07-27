@@ -274,5 +274,8 @@ files:
         CalcTest("calculator.calculator").run_tests()
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/6595#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 27 Jul 2022 19:53:28 UTC
 record: -1
